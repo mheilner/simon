@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Game</title>
+    <script src="login.js"></script>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="main.css" />
 
@@ -37,15 +38,14 @@
     </header>
         
     <main class="container-fluid bg-secondary text-center">
+      <div>
+        <h1>Welcome</h1>
+        <p>Login to play</p>
         <div>
-          <h1>Welcome to Simon by Mark</h1>
-          <p>Login to play</p>
-          <form method="get" action="play.html">
-            <!-- <label for="name">Name</label> -->
-            <input type="text" id="name" placeholder="Your name here"/>
-            <button type="submit" class="btn btn-primary">Login</button>
-          </form>
+          <input type="text" id="name" placeholder="Your name here" />
+          <button class="btn btn-primary" onclick="login()">Login</button>
         </div>
+      </div>
     </main>
 
     <footer class="bg-dark text-dark text-muted">
